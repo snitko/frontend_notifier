@@ -1,6 +1,6 @@
 jQuery ($) ->
 
-  class _Notification
+  class _FrontendNotifier
     
     constructor: () ->
       @block   = $("#frontend_notification")
@@ -40,6 +40,6 @@ jQuery ($) ->
         @update_timer() if timestamp == @current_timestamp
       ,1000
 
-  window.Notification = new _Notification
+  window.FrontendNotifier = new _FrontendNotifier
   if $("#frontend_notification_content span").size() > 0
-    Notification.show $("#frontend_notification_content span").text(), $("#frontend_notification_content span").attr("class")
+    FrontendNotifier.show $("#frontend_notification_content span").text(), $("#frontend_notification_content span").attr("class")
