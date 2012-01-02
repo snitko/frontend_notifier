@@ -1,0 +1,4 @@
+frontend_notifier:
+  closes_in: closes in
+  sec: sec
+  error500_text: You've just discovered an error in our application, we've been notified and will take care of it.

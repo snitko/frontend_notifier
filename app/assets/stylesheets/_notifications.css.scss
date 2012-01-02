@@ -1,0 +1,24 @@
+@mixin clearfix {
+  display: block;
+  &:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+}
+
+#frontend_notification {
+  height: 77px; position: fixed; color: #fff; z-index: 1999; border-bottom: solid 1px #06172a; width: 100%; display: none;
+  .contentWrapper { float: left; width: 100%; @include clearfix; }
+  .message { text-align: center; margin-right: 150px; padding-top: 28px; padding-left: 150px; padding-right: 20px; }
+  .info    {
+    float: left; width: 132px; margin-left: -150px; padding: 10px 8px 10px 10px; font-size: 11px; text-align: right;
+    .closingCounter { opacity: 0.5; }
+    img#close_notification_ico { opacity: 0.5; float: right; margin-left: 5px; cursor: pointer; }
+    img#close_notification_ico:hover { opacity: 1; }
+    .reportBug {
+      background-color: #670000; padding: 5px; font-size: 11px; margin: 0 auto; margin: 10px 10px 0 0; display: inline-block;
+      a, a:visited { opacity: 0.5; color: #fff; text-decoration: none; }
+      a:hover { opacity: 1; }
+    }
+  }
+}
+#frontend_notification.error   { background-color: #a90000; }
+#frontend_notification.success { background-color: #57a900; .reportBug { display: none; } }
+#frontend_notification_content { display: none; }
