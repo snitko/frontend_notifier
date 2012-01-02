@@ -21,4 +21,4 @@
 }
 #frontend_notification.error   { background-color: #a90000; }
 #frontend_notification.success { background-color: #57a900; .reportBug { display: none; } }
-#frontend_notification_content { display: none; }
+#frontend_notification_content, #frontend_notification_error500 { display: none; }
