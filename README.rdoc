@@ -1,3 +1,0 @@
-= frontend_notifier
-
-Shows cute notifications in frontend. No need to manually create your own html/css/js to show Rails's flash[:notice] or other flashes. This handles it nicely + you can customize it.

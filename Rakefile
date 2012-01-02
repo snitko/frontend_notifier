@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "frontend_notifier"
   gem.homepage = "http://github.com/snitko/frontend_notifier"
   gem.license = "MIT"
-  gem.summary = %Q{Cute notifications for the frontend.}
+  gem.summary = %Q{Rails extension, shows cute notifications in frontend.}
   gem.description = %Q{Shows cute notifications in frontend. No need to manually create your own html/css/js to show Rails's flash[:notice] or other flashes. This handles it nicely + you can customize it.}
   gem.email = "subscribe@snitko.ru"
   gem.authors = ["Roman Snitko"]
