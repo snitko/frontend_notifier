@@ -8,6 +8,8 @@ Shows cute notifications in frontend. No need to manually create your own html/c
 INSTALLATION
 ------------
 
+**Requirements**: Rails 3.1.0, jQuery
+
 1. `gem install frontend_notifier`
 2. put the following in your .scss file: `@import "frontend_notifier";`
 3. put the following in your .js or .coffee file: `#= require lib/_frontend_notifier`
@@ -50,6 +52,6 @@ There's also a handy #join_model_errors method added to the ApplicationControlle
 
     flash[:error] = join_model_errors(@user, include_field_names: true) # :include_field_names is true by default
 
-USAGE
+CUSTOMIZE
 -----
 For now, the gem lacks generators, so if you want to customize scss styles or haml templates, just copy .scss/.haml files from their gem dirs into your app dirs and change them.
