@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "frontend_notifier"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Snitko"]
@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
     "app/assets/images/frontend_notifier_close_notification_ico.png",
     "app/assets/javascripts/lib/_frontend_notifier.js.coffee",
     "app/assets/stylesheets/_frontend_notifier.css.scss",
-    "app/config/locales/en.yml",
     "app/views/shared/_frontend_notifier.html.haml",
+    "config/locales/frontend_notifier.en.yml",
     "frontend_notifier.gemspec",
     "lib/frontend_notifier.rb",
     "lib/frontend_notifier/application_controller.rb",
