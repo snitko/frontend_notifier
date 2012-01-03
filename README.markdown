@@ -13,6 +13,7 @@ INSTALLATION
 1. `gem install frontend_notifier`
 2. put the following in your .scss file: `@import "frontend_notifier";`
 3. put the following in your .js or .coffee file: `#= require lib/_frontend_notifier`
+4. put the following in layout: `= render :partial => "shared/frontend_notifier"`
 
 USAGE
 -----
