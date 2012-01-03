@@ -18,7 +18,7 @@ USAGE
 -----
 
 **Regular reuqests**
-FrontendNotifier will pick up any flash with the names `:error`, `:alert`, `:success` or `:notice`. You can customize this by creating your own `views/shared/frontend_notifier` template.
+FrontendNotifier will pick up any flash with the names `:error`, `:alert`, `:warning`, `:success` or `:notice`. You can customize this by creating your own `views/shared/frontend_notifier` template.
 
 **Ajax requests**
 Sometimes you may need to display the notification after an ajax request. For that, you may want to use `#notify_frontend` method now available in your controller and pass it either a model with (or without) errors:
