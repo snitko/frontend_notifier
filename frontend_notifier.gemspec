@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "frontend_notifier"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Snitko"]
-  s.date = "2012-01-03"
+  s.date = "2012-03-03"
   s.description = "Shows cute notifications in frontend. No need to manually create your own html/css/js to show Rails's flash[:notice] or other flashes. This handles it nicely + you can customize it."
   s.email = "subscribe@snitko.ru"
   s.extra_rdoc_files = [
