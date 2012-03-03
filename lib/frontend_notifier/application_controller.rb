@@ -28,7 +28,7 @@ module FrontendNotifierControllerExtension
         end
       end
       result = result.join("; ")
-      dot_at_the_end = (result =~ /\.\Z/) ? "" : "."
+      dot_at_the_end = (result =~ /[.!?]\Z/) ? "" : "."
       result + dot_at_the_end
     end
 
