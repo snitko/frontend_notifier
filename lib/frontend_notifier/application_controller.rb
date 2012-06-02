@@ -21,7 +21,9 @@ module FrontendNotifierControllerExtension
           result << v
         else
           if options[:include_field_names]
-            result << "#{k} #{v}"
+            attr_translation = t("activerecord.attributes.#{model.class.to_s.underscore}.#{k}")
+            attr_translation = k if attr_translation.include?("translation missing")
+            result << "#{attr_translation.to_s.mb_chars.capitalize.to_s} #{v}"
           else
             result << v
           end
