@@ -55,4 +55,4 @@ There's also a handy #join_model_errors method added to the ApplicationControlle
 
 CUSTOMIZE
 -----
-For now, the gem lacks generators, so if you want to customize scss styles or haml templates, just copy .scss/.haml files from their gem dirs into your app dirs and change them.
+Run `rails generate frontend_notifier`. It will copy frontend_notifier's view and stylesheet to yours application directory.
